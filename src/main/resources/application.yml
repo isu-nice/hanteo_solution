@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: solution
+
+  datasource:
+    url: jdbc:h2:mem:hanteo
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        connection:
+          characterEncoding: UTF-8
+        format_sql: true
+  sql:
+    init:
+      mode: always
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force-response: true
+      force-request: true
+      force: true
+  tomcat:
+    uri-encoding: UTF-8
