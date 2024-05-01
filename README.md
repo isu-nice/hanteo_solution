@@ -85,81 +85,81 @@ GET /categories/남자 HTTP/1.1
 
 ```json
 {
-    "category": [
+  "category": [
+    {
+      "id": 1,
+      "name": "남자",
+      "childId": 1,
+      "parentIdx": 0,
+      "children": [
         {
-            "id": 1,
-            "name": "남자",
-            "childId": 1,
-            "parentIdx": 0,
-            "children": [
-                {
-                    "id": 3,
-                    "name": "엑소",
-                    "childId": 3,
-                    "parentIdx": 1,
-                    "children": [
-                        {
-                            "id": 6,
-                            "name": "공지사항",
-                            "childId": 6,
-                            "parentIdx": 3,
-                            "children": []
-                        },
-                        {
-                            "id": 7,
-                            "name": "첸",
-                            "childId": 7,
-                            "parentIdx": 3,
-                            "children": []
-                        },
-                        {
-                            "id": 8,
-                            "name": "백현",
-                            "childId": 8,
-                            "parentIdx": 3,
-                            "children": []
-                        },
-                        {
-                            "id": 9,
-                            "name": "시우민",
-                            "childId": 9,
-                            "parentIdx": 3,
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "name": "방탄소년단",
-                    "childId": 4,
-                    "parentIdx": 1,
-                    "children": [
-                        {
-                            "id": 10,
-                            "name": "공지사항",
-                            "childId": 10,
-                            "parentIdx": 4,
-                            "children": []
-                        },
-                        {
-                            "id": 11,
-                            "name": "익명게시판",
-                            "childId": 11,
-                            "parentIdx": 4,
-                            "children": []
-                        },
-                        {
-                            "id": 12,
-                            "name": "뷔",
-                            "childId": 12,
-                            "parentIdx": 4,
-                            "children": []
-                        }
-                    ]
-                }
-            ]
+          "id": 3,
+          "name": "엑소",
+          "childId": 3,
+          "parentIdx": 1,
+          "children": [
+            {
+              "id": 6,
+              "name": "공지사항",
+              "childId": 6,
+              "parentIdx": 3,
+              "children": []
+            },
+            {
+              "id": 7,
+              "name": "첸",
+              "childId": 7,
+              "parentIdx": 3,
+              "children": []
+            },
+            {
+              "id": 8,
+              "name": "백현",
+              "childId": 8,
+              "parentIdx": 3,
+              "children": []
+            },
+            {
+              "id": 9,
+              "name": "시우민",
+              "childId": 9,
+              "parentIdx": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "방탄소년단",
+          "childId": 4,
+          "parentIdx": 1,
+          "children": [
+            {
+              "id": 10,
+              "name": "공지사항",
+              "childId": 10,
+              "parentIdx": 4,
+              "children": []
+            },
+            {
+              "id": 11,
+              "name": "익명게시판",
+              "childId": 11,
+              "parentIdx": 4,
+              "children": []
+            },
+            {
+              "id": 12,
+              "name": "뷔",
+              "childId": 12,
+              "parentIdx": 4,
+              "children": []
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
 
 ```
@@ -172,40 +172,40 @@ GET /categories?id=3 HTTP/1.1
 ```json
 
 {
-    "id": 3,
-    "name": "엑소",
-    "childId": 3,
-    "parentIdx": 1,
-    "children": [
-        {
-            "id": 6,
-            "name": "공지사항",
-            "childId": 6,
-            "parentIdx": 3,
-            "children": []
-        },
-        {
-            "id": 7,
-            "name": "첸",
-            "childId": 7,
-            "parentIdx": 3,
-            "children": []
-        },
-        {
-            "id": 8,
-            "name": "백현",
-            "childId": 8,
-            "parentIdx": 3,
-            "children": []
-        },
-        {
-            "id": 9,
-            "name": "시우민",
-            "childId": 9,
-            "parentIdx": 3,
-            "children": []
-        }
-    ]
+  "id": 3,
+  "name": "엑소",
+  "childId": 3,
+  "parentIdx": 1,
+  "children": [
+    {
+      "id": 6,
+      "name": "공지사항",
+      "childId": 6,
+      "parentIdx": 3,
+      "children": []
+    },
+    {
+      "id": 7,
+      "name": "첸",
+      "childId": 7,
+      "parentIdx": 3,
+      "children": []
+    },
+    {
+      "id": 8,
+      "name": "백현",
+      "childId": 8,
+      "parentIdx": 3,
+      "children": []
+    },
+    {
+      "id": 9,
+      "name": "시우민",
+      "childId": 9,
+      "parentIdx": 3,
+      "children": []
+    }
+  ]
 }
 ```
 
@@ -218,8 +218,8 @@ Content-Type: application/json
 Content-Length: 44
 
 {
-    "name": "레드벨벳",
-    "parentIdx": "2"
+  "name": "레드벨벳",
+  "parentIdx": "2"
 }
 ```
 
