@@ -56,8 +56,8 @@ test #테스트 코드
 ### Question 1
 - 카테고리 검색 
   - 해당 카테고리를 포함한 하위 카테고리를 모두 JSON 형식으로 응답합니다.
-  - 카테고리명을 입력하여 해당 카테고리를 검색할 수 있습니다.
-    - 카테고리명이 존재하지 않는 경우 `IllegalArgumentException`
+  - 카테고리 명을 입력하여 해당 카테고리를 검색할 수 있습니다.
+    - 카테고리 명이 존재하지 않는 경우 `IllegalArgumentException`
   - 카테고리 식별자(ID)를 입력하여 해당 카테고리를 검색할 수 있습니다.
     - 식별자가 존재하지 않는 경우 `IllegalArgumentException`
     - 식별자가 숫자가 아닌 경우 `IllegalArgumentException`
@@ -71,7 +71,7 @@ test #테스트 코드
   - 동전 배열에 음수나 0이 포함되어 있는 경우 `IllegalArgumentException`
     -  음수와 0이 가능한 경우, 경우의 수가 무한대로 늘어나기 때문
   - 합계가 1보다 작은 경우 `IllegalArgumentException`
-  - 동전의 최소값보다 합계가 작은 경우 `IllegalArgumentException`
+  - 동전의 최솟값보다 합계가 작은 경우 `IllegalArgumentException`
 - 동적 프로그래밍 알고리즘을 사용하여 조합을 만드는 방법 수를 계산합니다.
 
 
@@ -81,7 +81,6 @@ test #테스트 코드
 - 카테고리명 조회
 ```
 GET /categories/남자 HTTP/1.1
-Host: localhost:8080
 ```
 
 ```json
@@ -168,7 +167,6 @@ Host: localhost:8080
 - 카테고리 식별자 조회
 ```
 GET /categories?id=3 HTTP/1.1
-Host: localhost:8080
 ```
 
 ```json
@@ -216,7 +214,6 @@ Host: localhost:8080
 - 카테고리 생성
 ```
 POST /categories/save HTTP/1.1
-Host: localhost:8080
 Content-Type: application/json
 Content-Length: 44
 
