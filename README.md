@@ -46,11 +46,8 @@ test #테스트 코드
   │   └── category
   │       └── service
   │           └── CategoryServiceTest.java #1번 문제 테스트
-  └── question2 
-	  └── CoinGameTest.java #2번 문제 테스트
-
-
-
+  └── question2
+       └── CoinGameTest.java #2번 문제 테스트
 
 ```
 
@@ -232,6 +229,8 @@ Content-Length: 44
 
 ## H2 DB - 초기 데이터
 주어진 카테고리 구분 예시를 초기 데이터로 사용했습니다.
+
+<img width="255" alt="스크린샷 2024-05-01 오후 7 04 02" src="https://github.com/isu-nice/hanteo_solution/assets/111070569/8a912587-4934-4afa-8c15-902d168d394c">
 
 
 
